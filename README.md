@@ -1,6 +1,6 @@
 # PragmaPHP Uid
 
-Unique ID generation based on [ulid/spec](https://github.com/ulid/spec)
+PHP Unique ID generator based on [ULID](https://github.com/ulid/spec) (Universally Unique Lexicographically Sortable Identifier)
 
 [![Build Status](https://api.travis-ci.com/pragmaphp/uid.svg)](https://travis-ci.com/pragmaphp/uid)
 

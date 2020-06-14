@@ -2,10 +2,20 @@
 
 namespace PragmaPHP\Uid;
 
+/**
+* PHP Unique ID generator based on ULID (Universally Unique Lexicographically Sortable Identifier)
+*/
 class Uid {
 
-    public static function generate() {
-        $uid = self::encode(round(microtime(true) * 1000));
+    /**
+    * @param    int     Time in milliseconds (optional), e.g. round(microtime(true) * 1000)
+    * @return   string  Unique ID
+    */
+    public static function generate(int $millis = 0): string {
+        if ($millis === 0) {
+            $millis = round(microtime(true) * 1000);
+        }
+        $uid = self::encode($millis);
         if (strlen($uid) < 10) {
             $uid = '0' . $uid;
         }
