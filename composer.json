@@ -1,7 +1,6 @@
 {
     "name": "pragmaphp/uid",
-    "version": "1.0.0",
-    "description": "Unique ID Generator",
+    "description": "PHP Unique ID generator based on ULID (Universally Unique Lexicographically Sortable Identifier)",
     "type": "library",
     "license": "ISC",
     "authors": [
