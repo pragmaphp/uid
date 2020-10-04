@@ -8,7 +8,7 @@ namespace PragmaPHP\Uid;
 class Uid {
 
     /**
-    * @param    int     Time in milliseconds (optional), e.g. round(microtime(true) * 1000)
+    * @param    int     Time in milliseconds (optional). E.g. round(microtime(true) * 1000)
     * @return   string  Unique ID
     */
     public static function generate(int $millis = 0): string {
