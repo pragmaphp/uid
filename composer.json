@@ -19,5 +19,8 @@
         "psr-4": {
             "PragmaPHP\\Uid\\": "src/"
         }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
     }
 }
